@@ -8,7 +8,7 @@ April 2023
 
 • Advanced features, interactive animations, and dynamic content enhanced 80% integration of a user-friendly interface. 
 
-# Please click on this link:
+# Here is the link:
 https://sophienguyen113.github.io/portfoliowebsite.github.io/
 
 
