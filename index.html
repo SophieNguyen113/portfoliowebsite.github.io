@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/black.png" alt="Sophie Nguyen" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sophie Nguyen">Sophie Nguyen</h1>
+
+          <p class="title">Software Engineer Intern</p>
+          <p class="title">Sophomore @ Georgia State University</p>
+          <p class="title">Student of Honors College, President's List</p>
+          
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sophie@example.com" class="contact-link">nnguyen177@student.gsu.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone number</p>
+
+              <a href="tel:+12133522795" class="contact-link">(404) 358-4537</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="link-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+            
+              <a href="javascript:void(0);" onclick="openLinkInNewTab('https://www.linkedin.com/in/sophienguyen113')" class="contact-link">www.linkedin.com/in/sophienguyen113</a>
+
+                <script>
+                function openLinkInNewTab(url) {
+                  window.open(url, '_blank');
+                }
+                </script>
+
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="link-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="javascript:void(0);" onclick="openLinkInNewTab('https://github.com/SophieNguyen113')" class="contact-link">https://github.com/SophieNguyen113</a>
+
+                <script>
+                function openLinkInNewTab(url) {
+                  window.open(url, '_blank');
+                }
+                </script>
+            </div>
+
+          </li>
+
+        </ul>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About Me</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education and Experience</button>
+          </li>
+
+        
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Technical Skills</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about me  active" data-page="about me">
+
+        <header>
+          <h2 class="h2 article-title"> </h2>
+          <h2 class="h2 article-title">Welcome to my portfolio website</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            My formal name is Ngoc Phuong Duyen Nguyen, please feel free to call me Sophie Nguyen. 
+            I am a student at Georgia State University and a Student of Honors College.
+          </p>
+
+          <p>
+            My major is computer science because I would like to become a software engineer in the future.
+            Since information technology is developed and updated every day, it can challenge my ability and my interest in coding, programming problems, and Artificial Intelligence.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">About Me</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">🌻Slogan🌻</h4>
+
+                <p class="service-item-text">
+                  Time waits for no one, so learn from yesterday, live for today, and hope for tomorrow.
+                </p>
+              </div>
+
+            </li> 
+
+            <li class="service-item">
+
+              
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                
+
+                <p class="service-item-text">
+                  I have high responsibility which is always my top priority. 
+                  In my life, "give up" is something that is never in my dictionary, helping me overcome every difficulty and obstacle.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+
+                <p class="service-item-text">
+                  I love to learn. The subject matter that interests me most is my experiences in my life and studying, 
+                  but whatever the subject, I will always be drawn to the learning process. 
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+    
+
+                <p class="service-item-text">
+                  I love to solve problems. I enjoy the challenge of analyzing situations, identifying details, and finding solutions. 
+                  I am the kind of person who enjoys my time alone because it is my time for musing and reflection.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - overalap
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              
+            </div>
+
+            <div class="modal-content">
+
+              
+
+              
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - resume link
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">PDF Resume Link</h3>
+         
+
+          <ul class="service-list">
+            
+
+            
+
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <a href="javascript:void(0);" onclick="openLinkInNewTab('https://drive.google.com/drive/folders/1hwlvUo7ocwcw5Po0fozNwoHp5xIOk9_N?usp=sharing')" 
+                class="contact-link" style="color: white;">Please click on the sunflower 🌻 </a>
+
+                <script>
+                function openLinkInNewTab(url) {
+                  window.open(url, '_blank');
+                }
+                </script>
+              </div>
+
+              <div class="service-content-box">
+    
+
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="education and experience" data-page="education and experience">
+
+        <header>
+          <h2 class="h2 article-title"> </h2>
+          <h2 class="h2 article-title">Education & Experience</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Science in Computer Science </h4>
+
+              <span>Expected, May 2025  </span>
+
+              <p class="timeline-text">
+                Georgia State University | Atlanta, GA, USA
+              </p>
+              <p class="timeline-text">
+                • GPA: 4.06/4.0 
+              </p>
+              <p class="timeline-text">
+                • Honors: Presidential Leadership Scholarship with Full Waiver, President's List, STEM Student Scholar Award (all semesters)
+              </p>
+              <p class="timeline-text">
+                • Coursework: Principles Computer Programming, Data Structures, Object-oriented Programming, Data Science, Theoretical Foundations of Computer Science, Probability and Statistics for Computer Science, Honors Calculus I & II, Linear Algebra. 
+
+
+              </p>
+
+            </li>
+
+            
+
+            
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Computer Science Teaching Assistant </h4>
+
+              <span>January 2023 - April 2023</span>
+
+              <p class="timeline-text">
+                Georgia State University | Atlanta, GA, USA
+              </p>
+              <p class="timeline-text">
+                • Led lab classes, study sessions, review sessions, and tutor meetings, assisted with data collection and analysis.
+              </p>
+              <p class="timeline-text">
+                • Supported class management by preparing materials and facilitating group activities, increasing to 80% of students achieving
+                grade B+ and above.
+                
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CATLab Student Technology Support Specialist	</h4>
+
+              <span>September 2022 – November 2022</span>
+
+              <p class="timeline-text">
+                Georgia State University | Atlanta, GA, USA
+              </p>
+              <p class="timeline-text">
+                • Performed technical assistance for hardware and software applications to boost student satisfaction to 95%.
+              </p>
+              <p class="timeline-text">
+                • Facilitated regular operations of computer and media laboratories.
+              </p>
+              <p class="timeline-text">
+                • Configured and troubleshooted a range of devices for use with the campus wireless network.
+
+
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Computer Science Teaching Assistant </h4>
+
+              <span>July 2018 – May 2019</span>
+
+              <p class="timeline-text">
+                Luong The Vinh High School for the Gifted | Dongnai, Vietnam
+              </p>
+              <p class="timeline-text">
+                • Assisted the professor with creating and delivering learning materials in computer science field for the gifted. 
+              </p>
+              <p class="timeline-text">
+                • Held weekly office hours and graded homework, programming assignments, exams, or projects.
+              </p>
+              <p class="timeline-text">
+                • Consulted and educated students after school to strengthen understanding of computer science principles, increased to 80% of
+students achieving grade B and above.
+
+
+              </p>
+
+            </li>
+
+           
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Activities</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer @ Google Developer Student Club </h4>
+
+              <span>January 2023 – Present</span>
+
+              <p class="timeline-text">
+                Remote
+              </p>
+              <p class="timeline-text">
+                • Design and implement front-end code of 8 responsive websites and 20+ UI/UX features to enhance user experience to 56%.
+              </p>
+              <p class="timeline-text">
+                • Participate in mock interviews and coding workshop events.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Science & Machine Learning Research Fellow </h4>
+
+              <span>April 2023 – May 2023 </span>
+
+              <p class="timeline-text">
+                Georgia State University | Atlanta, GA, USA
+              </p>
+              <p class="timeline-text">
+                • Built a pipeline for data collection, data processing, data cleaning, visualization, and data analysis of Spotify and YouTube dataset using Python, NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn. 
+              </p>
+              <p class="timeline-text">
+                • Trained and performed machine learning linear regression model, evaluating the classification performance on testing data to boost accuracy to 35%.
+              
+
+            </li>
+
+           
+
+          </ol>
+
+        </section>
+
+   
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+       
+
+        <section class="projects">
+
+         
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+           
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="building drawing">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/house.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">architecture</h3>
+
+                <p class="project-category">Building Drawing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="building drawing">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/house2.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architecture</h3>
+
+                <p class="project-category">Building Drawing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="building drawing">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/house4.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architecture</h3>
+
+                <p class="project-category">Building Drawing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="3d modeling">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/drawing.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architecture</h3>
+
+                <p class="project-category">3D Modeling</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="3d modeling">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/house3.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architecture</h3>
+
+                <p class="project-category">3D Modeling</p>
+
+              </a>
+            </li>
+
+           
+
+            <li class="project-item  active" data-filter-item data-category="house blueprint">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architecture</h3>
+
+                <p class="project-category">House Blueprint</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="3d modeling">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architecture</h3>
+
+                <p class="project-category">3D Modeling</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="house blueprint">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architecture</h3>
+
+                <p class="project-category">House Blueprint</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    <time datetime="2022-02-23">February 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Ten</h3>
+
+                  <p class="blog-text">
+                    Mieu ta
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    <time datetime="2022-02-23">March 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Ten</h3>
+
+                  <p class="blog-text">
+                    Mieu ta
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    <time datetime="2022-02-23">April 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Portfolio Website </h3>
+
+                  <p class="blog-text">
+                    • Developed a professional portfolio website using HTML, CSS, and JavaScript, showcasing my experiences, projects, and skills. 
+                  </p>
+
+                  <p class="blog-text">
+                    • Advanced features, interactive animations, and dynamic content enhanced 80% integration of a user-friendly interface. 
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                   
+
+                    <time datetime="2022-02-23">May 2023</time>
+                    
+                  </div>
+
+      
+
+                  <h3 class="h3 blog-item-title">Air Gesture </h3>
+
+                  
+
+                  <p class="blog-text">
+                    • Implemented Hand Landmarks Detection, Mediapipe framework of Google, to play Angry Birds without using a mouse with high accuracy and low latency to enhance 47% user experience.
+                  </p>
+                  
+            
+                  <p class="blog-text">
+                    •  Utilized pydirectinput, an open source aims to use DirectInput scan codes and the more modern SendInput function.
+                  </p>
+
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    <time datetime="2022-02-23">December 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Minesweeper Game</h3>
+
+                  <p class="blog-text">
+                    • Created 150+ lines of a Minesweeper Game program to let user open a cell and check if the user gets a score or loses the game.
+                  </p>
+                  <p class="blog-text">
+                    • Succeed in utilizing multi-dimensional arrays, list data structure, while/for loops, if/else statements, and data types in Python. 
+                  </p> 
+                  <p class="blog-text">
+                    • Implemented multiple functions (parameters and return values) to improve project accuracy to 95% and reduce risks by 20%.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    <time datetime="2022-02-23">October 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    4 – Way Traffic System</h3>
+
+                  <p class="blog-text">
+                    • Designed a 4-way traffic system simulation in Proteus Professional software with pedestrian button to interrupt the system and allow the pedestrian to cross. 
+                  </p>
+                  <p class="blog-text">
+                    • Created an Arduino program, an open-source platform that uses a programming language based on C++, to compile and debug the project.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/house.jpg" alt="finance" loading="lazy">
+
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    "Yes or Yes"</h3>
+
+                  <p class="blog-text">
+                    • My first programming project.
+                  </p>
+                  <p class="blog-text">
+                    • Utilized methods in C++ programming language to build the project.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/house2.jpg" alt="orizon" loading="lazy">
+
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    "Yes or Yes"</h3>
+
+                  <p class="blog-text">
+                    • My first programming project.
+                  </p>
+                  <p class="blog-text">
+                    • Utilized methods in C++ programming language to build the project.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/drawing.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                 
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Geometry Program</h3>
+
+                  <p class="blog-text">
+                    • Developed a Java Geometry Program.
+                  </p>
+
+                  <p class="blog-text">
+                    • Utilized scanner class, constants, variables, printf, if/else statements, Boolean statements, while loops, for loops, methods (parameters and return values), and arrays in Java programming language to build the project.
+                  </p>
+                    <p class="blog-text">
+                    • Succeed in checking the result with 100% accuracy in under 1 second.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/house3.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Grade Average Program</h3>
+
+                    <p class="blog-text">
+                      • Developed a Java Grade Average Program.
+                    </p>
+  
+                    <p class="blog-text">
+                      • Utilized scanner class, constants, variables, printf, if/else statements, Boolean statements, while loops, for loops, methods (parameters and return values), and arrays in Java programming language to build the project.
+                    </p>
+                      <p class="blog-text">
+                      • Succeed in checking the result with 100% accuracy in under 1 second.
+                    </p>
+  
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Resort Accommodations Program</h3>
+
+                  <p class="blog-text">
+                    • Developed a Java Resort Accommodations Program.
+                  </p>
+
+                  <p class="blog-text">
+                    • Utilized scanner class, constants, variables, printf, if/else statements, Boolean statements, while loops, for loops, methods (parameters and return values), and arrays in Java programming language to build the project.
+                  </p>
+                    <p class="blog-text">
+                    • Succeed in checking the result with 100% accuracy in under 1 second.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Restaurant Tab Program</h3>
+
+                  <p class="blog-text">
+                    • Developed a Java Restaurant Tab program.
+                  </p>
+
+                  <p class="blog-text">
+                    • Utilized scanner class, constants, variables, printf, if/else statements, Boolean statements, while loops, for loops, methods (parameters and return values), and arrays in Java programming language to build the project.
+                  </p>
+                    <p class="blog-text">
+                    • Succeed in checking the result with 100% accuracy in under 1 second.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Heart Shape Program</h3>
+
+                  <p class="blog-text">
+                    
+                    • Developed a heart shape using HTML with special effects.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    
+
+                    
+
+                    
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    LEDRGB Arduino System</h3>
+
+                  <p class="blog-text">
+                    • Designed a RGB Led system simulation in Proteus Professional software.
+                  </p>
+                  <p class="blog-text">
+                    • Created an Arduino program, an open-source platform that uses a programming language based on C++, to compile and debug the project.
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Technical Skills
+      -->
+
+      <article class="technical skills" data-page="technical skills">
+
+
+        <section class="service">
+
+          <header>
+            <h2 class="h2 article-title"> </h2>
+            <h2 class="h2 article-title">Technical Skills</h2>
+          </header>
+
+          <ul class="service-list">
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming Languages</h4>
+
+                <p class="service-item-text">
+                  Swift, C#, C, Python, Java, JavaScript
+                </p>
+              </div>
+
+            </li> 
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Design</h4>
+
+                <p class="service-item-text">
+                  HTML, CSS, Heroku
+                </p>
+              </div>
+
+            </li> 
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tools</h4>
+
+                <p class="service-item-text">
+                  XCode, Git, Github, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Colab Notebook, Visual Studio, Figma, Mediapipe
+                </p>
+              </div>
+
+            </li> 
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Certificates</h4>
+
+                <p class="service-item-text">
+                  🌻 HarvardX CS50's Introduction to Computer Science
+                </p>
+                <p class="service-item-text">
+                  🌻 HarvardX CS50's Web Programming with Python and JavaScript
+                </p>
+                <p class="service-item-text">
+                  🌻 HarvardX CS50's Introduction to Artificial Intelligence with Python
+                </p>
+                <p class="service-item-text">
+                  🌻 GaTechX Data Structures & Algorithms
+                </p>
+              </div>
+
+            </li> 
+
+            
+
+            
+
+          </ul>
+
+        </section>
+
+
+        
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
